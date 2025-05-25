@@ -920,10 +920,10 @@ function App() {
                     {isLoading ? (
                       <Skeleton height={32} width={40} />
                     ) : (
-                      <div style={{ fontSize: '28px', fontWeight: '600' }}>92%</div>
+                      <div style={{ fontSize: '28px', fontWeight: '600' }}>75%</div>
                     )}
                     <div style={{ marginTop: '8px', height: '6px', backgroundColor: 'rgba(79, 70, 229, 0.2)', borderRadius: '3px', position: 'relative' }}>
-                      <div style={{ position: 'absolute', width: '92%', height: '100%', backgroundColor: '#4f46e5', borderRadius: '3px' }}></div>
+                      <div style={{ position: 'absolute', width: '70%', height: '100%', backgroundColor: '#4f46e5', borderRadius: '3px' }}></div>
                     </div>
                   </div>
                 </div>
@@ -941,7 +941,7 @@ function App() {
                     {isLoading ? (
                       <Skeleton height={32} width={40} />
                     ) : (
-                      <div style={{ fontSize: '28px', fontWeight: '600' }}>56</div>
+                      <div style={{ fontSize: '28px', fontWeight: '600' }}>{products.length}</div>
                     )}
                   </div>
                 </div>
@@ -960,7 +960,7 @@ function App() {
                     {isLoading ? (
                       <Skeleton height={32} width={40} />
                     ) : (
-                      <div style={{ fontSize: '28px', fontWeight: '600' }}>124</div>
+                      <div style={{ fontSize: '28px', fontWeight: '600' }}>{clients.length}</div>
                     )}
                   </div>
                 </div>
@@ -1194,7 +1194,7 @@ function App() {
       {/* Sidebar / Navigation */}
       <div className="sidebar">
         <div className="sidebar-header">
-          <div className="logo">Prédiction ERP</div>
+          <div className="logo">SmartDataFlow</div>
         </div>
         <ul className="nav-list">
           <li className="nav-item">
@@ -1252,7 +1252,7 @@ function App() {
             </button>
           </li>
            <li className="nav-item">
-            <a href='https:www.google.com' target='_blank' rel='noopener noreferrer' className={`nav-link ${activeSection === 'data' ? 'active' : ''}`}>
+            <a href='https://app.powerbi.com/Redirect?action=OpenApp&appId=b57a7315-1f26-4697-a285-148bba84788f&ctid=889cdbee-d881-42dc-bd06-ad3237c34a53&experience=power-bi' target='_blank' rel='noopener noreferrer' className={`nav-link ${activeSection === 'data' ? 'active' : ''}`}>
               <PredictionIcon />
               <span>voir les données</span>
             </a>
